@@ -2,7 +2,8 @@
 
 1. Inputting via json/os lib.
 
-  Change the path if required
+Change the path if required
+
 ![image](https://github.com/Xavaitron/Bitcoin-miner-validater/assets/143639958/9ba9a71c-9a8a-4f1d-a038-cf1b3762aeb0)
 
 2. Creating a double sha256 function that takes a hex(string format) as input and hashes it twice.
