@@ -1,8 +1,10 @@
+#importing the libs
 import json
 import os
 import time
 import hashlib
 
+#double hash function
 def HASH256(str_hex):
     binary = bytes.fromhex(str_hex)  # convert to binary from hex
     hash1 = hashlib.sha256(binary).digest()  # hash and convert to binary
@@ -26,6 +28,7 @@ def merkleroot(txids_list):
     # pass the temp list
     return merkleroot(hashes)
 
+# global variable tx_fees
 tx_fees = 0
 
 def check_validity_calculate_tx_fees(transaction):
@@ -121,7 +124,7 @@ def mine_block(header):
 
 Block_Header["nonce"] = mine_block(Block_Header)
 
-
+# outputing a output.json file
 with open(r"Assignment-1\output.json", "w") as output_file:
     output_file.write(json.dumps(Block_Header, indent=4) + "\n")
     output_file.write(json.dumps(Serialized_Coinbase_Transaction, indent=4) + "\n")
