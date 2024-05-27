@@ -3,6 +3,7 @@
 1. Inputting via json/os lib.
 
 Change the path if required
+It throws error if file is not found or can't be opened.
 
 ![image](https://github.com/Xavaitron/Bitcoin-miner-validater/assets/143639958/9ba9a71c-9a8a-4f1d-a038-cf1b3762aeb0)
 
